@@ -80,7 +80,7 @@ def create_zone_analysis(df_live, model):
         "day_of_week": now.weekday()
     }])
 
-    # 🔥 FIX: Use model.predict
+    #  Use model.predict
     explainer = shap.Explainer(model.predict, input_df)
 
     shap_values = explainer(input_df)

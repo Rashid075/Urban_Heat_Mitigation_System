@@ -9,14 +9,13 @@ def create_live_map(df_live, model):
     map_obj = folium.Map(
         location=[20.5937, 78.9629],
         zoom_start=5,
-        tiles="CartoDB dark_matter"
+        tiles="OpenStreetMap"
     )
 
     now = datetime.now()
 
     for _, row in df_live.iterrows():
 
-        # 🔥 FULL FEATURE SET (IMPORTANT)
         input_df = pd.DataFrame([{
             "humidity_pct": row["humidity"],
             "wind_speed_kmph": row["wind_speed"],

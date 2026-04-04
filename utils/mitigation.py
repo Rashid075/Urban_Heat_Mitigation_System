@@ -11,7 +11,7 @@ def create_mitigation(df_live, model):
 
     now = datetime.now()
 
-    # 🔥 FULL FEATURE SET (MATCH TRAINING)
+    #  FULL FEATURE SET
     base_input = pd.DataFrame([{
         "humidity_pct": zone_data["humidity"],
         "wind_speed_kmph": zone_data["wind_speed"],

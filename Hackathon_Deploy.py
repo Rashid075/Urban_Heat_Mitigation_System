@@ -332,7 +332,7 @@ with tabs[7]:
 
     st.line_chart(future)
 # ======================
-# ADD LOCATION (RESTORED + CLEAN UI)
+# ADD LOCATION 
 # ======================
 st.sidebar.markdown("## 📍 Zone Insights")
 

@@ -30,13 +30,11 @@ def create_history():
         st.warning("No historical data available for this zone")
         return
 
-    # ==============================
-    # PREPROCESS
-    # ==============================
+   
     df_hist["datetime"] = pd.to_datetime(df_hist["datetime"])
 
     # ==============================
-    # METRICS (PROFESSIONAL DASHBOARD STYLE)
+    # METRICS 
     # ==============================
     col1, col2, col3 = st.columns(3)
 
@@ -108,7 +106,7 @@ def create_history():
 
 
 # ==============================
-# OPTIONAL: GLOBAL HISTORY VIEW
+# GLOBAL HISTORY VIEW
 # ==============================
 def create_global_history():
 

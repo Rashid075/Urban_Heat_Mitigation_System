@@ -9,7 +9,7 @@ def generate_grid(lat_min, lat_max, lon_min, lon_max, step=2):
     for lat in lat_range:
         for lon in lon_range:
 
-            # Add randomness (avoid rectangle look)
+            
             lat_jitter = lat + np.random.uniform(-0.3, 0.3)
             lon_jitter = lon + np.random.uniform(-0.3, 0.3)
 
