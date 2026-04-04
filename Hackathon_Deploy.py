@@ -292,7 +292,7 @@ with tabs[5]:
     create_history()
 
 with tabs[6]:
-    create_planning(df_live)
+    create_planning(df_live, xgb_model)
     
 # ======================
 # TAB 7 → FORECAST
